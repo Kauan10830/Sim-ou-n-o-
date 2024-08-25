@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 20%;
+        }
+        .hidden {
+            display: none;
+        }
+        #nao {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function desaparecer() {
+            const botaoNao = document.getElementById('nao');
+            botaoNao.classList.add('hidden');
+        }
+
+        function clicouSim() {
+            alert('Obrigado por aceitar!');
+        }
+    </script>
+</head>
+<body>
+    <h1>Você aceita sair comigo?</h1>
+    <button id="sim" onclick="clicouSim()">Sim</button>
+    <button id="nao" onclick="desaparecer()">Não</button>
+</body>
+</html>
